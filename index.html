@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupees Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<h2>Rupees Notes & Coins Calculator</h2>
+
+<table>
+    <tr><th>Denomination</th><th>Count</th><th>Value</th></tr>
+    <tr>
+        <td data-label="Denomination">₹500</td>
+        <td data-label="Count"><input type="number" id="n500" placeholder="Enter number" oninput="updateValue(500)"></td>
+        <td data-label="Value" id="v500">₹0</td>
+    </tr>
+    <tr>
+        <td data-label="Denomination">₹200</td>
+        <td data-label="Count"><input type="number" id="n200" placeholder="Enter number" oninput="updateValue(200)"></td>
+        <td data-label="Value" id="v200">₹0</td>
+    </tr>
+    <tr>
+        <td data-label="Denomination">₹100</td>
+        <td data-label="Count"><input type="number" id="n100" placeholder="Enter number" oninput="updateValue(100)"></td>
+        <td data-label="Value" id="v100">₹0</td>
+    </tr>
+    <tr>
+        <td data-label="Denomination">₹50</td>
+        <td data-label="Count"><input type="number" id="n50" placeholder="Enter number" oninput="updateValue(50)"></td>
+        <td data-label="Value" id="v50">₹0</td>
+    </tr>
+    <tr>
+        <td data-label="Denomination">₹20</td>
+        <td data-label="Count"><input type="number" id="n20" placeholder="Enter number" oninput="updateValue(20)"></td>
+        <td data-label="Value" id="v20">₹0</td>
+    </tr>
+    <tr>
+        <td data-label="Denomination">₹10</td>
+        <td data-label="Count"><input type="number" id="n10" placeholder="Enter number" oninput="updateValue(10)"></td>
+        <td data-label="Value" id="v10">₹0</td>
+    </tr>
+    <tr>
+        <td data-label="Denomination">₹5</td>
+        <td data-label="Count"><input type="number" id="n5" placeholder="Enter number" oninput="updateValue(5)"></td>
+        <td data-label="Value" id="v5">₹0</td>
+    </tr>
+    <tr>
+        <td data-label="Denomination">₹2</td>
+        <td data-label="Count"><input type="number" id="n2" placeholder="Enter number" oninput="updateValue(2)"></td>
+        <td data-label="Value" id="v2">₹0</td>
+    </tr>
+    <tr>
+        <td data-label="Denomination">₹1</td>
+        <td data-label="Count"><input type="number" id="n1" placeholder="Enter number" oninput="updateValue(1)"></td>
+        <td data-label="Value" id="v1">₹0</td>
+    </tr>
+</table>
+
+<br>
+<button onclick="clearAll()">Clear All</button>
+
+<h3 id="total_amount">Total Amount: ₹0</h3>
+
+<script src="script.js"></script>
+</body>
+</html>
